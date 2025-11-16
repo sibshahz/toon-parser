@@ -1,0 +1,36 @@
+{
+  "name": "@sibshahz/toon-parser",
+  "version": "1.0.3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "description": "Toon serialization format encoder/decoder for Express.js (Node.js)",
+  "keywords": [
+    "toon",
+    "serialization",
+    "data-serialization",
+    "data-format",
+    "custom-format",
+    "json-alternative",
+    "json-replacement",
+    "encoder",
+    "decoder",
+    "parser",
+    "serializer",
+    "deserializer",
+    "protocol",
+    "nodejs",
+    "typescript",
+    "express-middleware",
+    "rest-api",
+    "lightweight-format",
+    "compact-format"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
