@@ -1,5 +1,6 @@
 import { decode } from "./decoder";
 import { encode } from "./encoder";
+import { Request, Response, NextFunction } from "express";
 
 export function toonParser() {
   return function (req: any, res: any, next: any) {
@@ -19,11 +20,13 @@ export function toonParser() {
   };
 }
 
-export function toonResponder(req: any, res: any, next: any) {
-  res.toon = function (data: any) {
-    const body = encode(data);
-    res.setHeader("Content-Type", "text/toon");
-    res.send(body);
+
+export function toonResponder() {
+  return (req: Request, res: Response, next: NextFunction) => {
+    res.toon = (data: any) => {
+      res.setHeader("Content-Type", "text/toon");
+      res.send(encode(data));
+    };
+    next();
   };
-  next();
 }
