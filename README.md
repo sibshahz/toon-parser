@@ -62,7 +62,7 @@ app.use(toonParser());
 ```ts
 import { toonResponder } from "@sibshahz/toon-parser";
 
-app.use(toonResponder);
+app.use(toonResponder());
 
 app.get("/users", (req, res) => {
   res.toon({
