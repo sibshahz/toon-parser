@@ -2,7 +2,12 @@
   "name": "@sibshahz/toon-parser",
   "version": "1.0.5",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
+  "typesVersions": {
+  "*": {
+      "*": ["dist/types/*"]
+    }
+  },
   "type": "module",
   "license": "MIT",
   "description": "Toon serialization format encoder/decoder for Express.js (Node.js)",
