@@ -28,7 +28,7 @@
     "compact-format"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsup src/index.ts --format esm --dts"
   },
   "dependencies": {},
   "devDependencies": {
