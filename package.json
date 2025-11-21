@@ -6,6 +6,10 @@
   "type": "module",
   "license": "MIT",
   "description": "Toon serialization format encoder/decoder for Express.js (Node.js)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sibshahz/toon-parser.git"
+  },
   "keywords": [
     "toon",
     "serialization",
